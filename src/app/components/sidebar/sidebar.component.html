@@ -2,6 +2,7 @@
   <span  *ngIf = "filteredPeople.length; else allPeople">
     <section class = "people-card"
       *ngFor = "let person of filteredPeople"
+      [class.inactive]="person !== selectedPerson" [class.selected]="person === selectedPerson"
       (click)="onSelect(person);">
       <p>{{ person.name }}
         <i class="fa fa-caret-right fa-2x pull-right" aria-hidden="true"></i>
@@ -13,6 +14,7 @@
     <span *ngIf = "!searchString">
     <section class = "people-card"
       *ngFor = "let person of people"
+      [class.inactive]="person !== selectedPerson" [class.selected]="person === selectedPerson"
       (click)="onSelect(person);">
       <p>{{ person.name }}
         <i class="fa fa-caret-right fa-2x pull-right" aria-hidden="true"></i>
@@ -22,4 +24,4 @@
   </ng-template>
 
   </span>
-<app-main-panel class= "col-md-10 col-ls-12" [selectedPerson]= "selectedPerson"></app-main-panel>
+<app-main-panel class= "col-md-offset-1 col-md-9 col-ls-12" [selectedPerson]= "selectedPerson"></app-main-panel>

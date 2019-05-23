@@ -34,5 +34,12 @@ export class SidebarComponent implements OnInit {
 
   onSelect(person: any) {
     this.selectedPerson = person;
+    this.scroll();
+  }
+
+  scroll() {
+    document.querySelector('.peopole-detail').scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 }

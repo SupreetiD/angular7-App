@@ -1,8 +1,8 @@
 
 <div class="peopole-detail container" *ngIf= "selectedPerson">
-  <section class="detail-header row">
-    <img class= "col-md-offset-2 col-md-2 person-img" src="{{selectedPerson.img}}" alt="">
-    <div class= "col-md-offset-2 col-md-5">
+  <section class="detail-header">
+    <img class= "person-img" src="{{selectedPerson.img}}" alt="">
+    <div class= "col-md-offset-1 col-md-5 col-sm-offset-3 col-sm-5">
       <div class="reviews">
         <button type="button" name="button" id="btn-send">
           SEND MESSAGE!
@@ -14,14 +14,14 @@
       </div>
     </div>
   </section>
-  <section class = "row">
-    <span class= "detail-body col-md-offset-2 col-md-10">
+  <section>
+    <div class= "detail-body col-md-9">
       <p> {{ selectedPerson.Description }}</p>
-    </span>
+    </div>
   </section>
 
-  <section class = "people-liking-table row">
-    <table class= "col-md-offset-2 col-md-5 col-sm-12 col-ls-12">
+  <section class = "people-liking-table">
+    <table class= "col-md-4 col-sm-12 col-ls-12">
       <tr>
         <th>Likes</th>
       </tr>
@@ -30,7 +30,7 @@
           </tr>
       </table>
 
-      <table class= "col-md-5 col-sm-12 col-ls-12">
+      <table class= "col-md-4 col-sm-12 col-ls-12">
         <tr>
           <th>Dislikes</th>
         </tr>

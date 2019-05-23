@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  search(event: any) {
+  search() {
     const me: any = this;
     me.peopleStore = me.peopleService.storage;
     this.filteredPeople = me.filterPeople.filter(me.peopleStore, me.searchString);

@@ -1,9 +1,11 @@
 header {
   z-index: 999;
-  width: 100%;
   .header {
     padding: 10px 25px;
-  }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
   #search {
       position: relative;
       font-size: 18px;
@@ -61,4 +63,7 @@ header {
 .user-name {
   font-size: 16px;
   margin: 30px;
+}
+.user-info {
+  margin-left: auto;
 }

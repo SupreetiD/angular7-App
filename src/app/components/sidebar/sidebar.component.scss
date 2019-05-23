@@ -1,9 +1,19 @@
 .people-card {
-  padding: 40px 20px;
+  padding: 36px 18px;
   border: 1px solid #DFD7CA;
-  min-width: 280px;
-  font-size: 20px;
+  min-width: 15em;
+  font-size: 17px;
+  &:hover {
+    cursor: pointer;
+    background: #DFD7CA;
+  }
 }
 .side-bar {
   margin-top: 20px;
+}
+.people-card.selected {
+  font-weight:900;
+}
+.people-card.inactive {
+  font-weight:400;
 }
